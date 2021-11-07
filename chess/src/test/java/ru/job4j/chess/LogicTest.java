@@ -26,7 +26,8 @@ public class LogicTest {
     }
 
     @Test(expected = FigureNotFoundException.class)
-    public void whenNotFound() throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
+    public void whenNotFound()
+            throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.F1));
         logic.move(Cell.A1, Cell.C3);
